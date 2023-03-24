@@ -1,0 +1,82 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/* ============== */
+/* === MEDIA QUERY === */
+/* ============== */
+@media only screen and (max-width: 575px){
+	.banner .row {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	.choose-us .choose-img {
+		max-width: 100%;
+	}
+	.testimonial .test-left {
+		margin-bottom: 50px;
+	}
+	.testimonial .wrapper {
+		width: 100%;
+	}
+	.social .social-icon {
+		margin-bottom: 10px;
+	}
+	.footer .row {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	.footer .left,
+	.footer .middle {
+		margin-bottom: 20px;
+	}
+	.middle .location,
+	.middle .phone,
+	.middle .email {
+		margin-bottom: 8px !important;
+	}
+}
+@media only screen and (max-width: 767px){
+	.banner {
+		padding-top: 120px;
+	}
+	.banner .desc {
+		display: block;
+	}
+	.service .column-1,
+	.service .column-2 {
+		margin-bottom: 40px;
+	}
+    .service .service-title::after,
+    .choose-us .choose-title::after,
+    .testimonial .testimonial-title::after,
+    .social .social-title::after {
+        content: none;
+    }
+}
+@media only screen and (max-width: 991px){
+	.navbar-nav {
+        margin-top: 7px;
+    }
+    .navbar-nav .nav-item {
+        padding: 8px 0;
+    }
+    .nav-item .nav-link:hover:after{
+	    width: 0%;
+    }
+    .nav-item .nav-link:hover {
+        padding-left: 5px;
+    }
+    .banner .title {
+		font-size: 33px;
+	}
+	.banner .desc {
+		display: none;
+	}
+	.banner-right .banner-rt-img {
+		max-width: 100%;
+	}
+}

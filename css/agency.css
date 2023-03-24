@@ -1,0 +1,311 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/*-----------------------------------------------
+/* Name of creator: Herishon Sangma
+ * Email: herishon.febian@gmail.com
+ * Fiverr profile https://www.fiverr.com/herishon
+--------------------------------------------------*/
+
+/* ===== GOOGLE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* --- Global Styles --- */
+:root {
+	--color1: #a517ba;
+	--color2: #5f1782;
+}
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box !important;
+	        box-sizing: border-box !important;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+.navbar {
+	background-image: -webkit-gradient(linear, left top, right top, from(var(--color1)), to(var(--color2)));
+	background-image: -o-linear-gradient(left, var(--color1), var(--color2));
+	background-image: linear-gradient(to right, var(--color1), var(--color2));
+}
+.logo {
+	width: 9.3rem;
+}
+.navbar-toggler {
+	background-color: #eee;
+}
+.nav-item {
+	margin-right: 1.5rem;
+}
+.nav-link {
+	padding: 0 !important;
+}
+.nav-item .nav-link {
+	color: #fff !important;
+	position: relative;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+.nav-item .nav-link:after,
+.nav-item .nav-link:before {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.nav-item .nav-link:after {
+	position: absolute;
+	bottom: -0.5rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	color: transparent;
+	background: #eee;
+	height: 0.12rem;
+}
+.nav-item .nav-link:hover:after{
+	width: 100%;
+}
+
+/* --- Banner --- */
+.banner {
+	background-image: -webkit-gradient(linear, left top, right top, from(var(--color1)), to(var(--color2)));
+	background-image: -o-linear-gradient(left, var(--color1), var(--color2));
+	background-image: linear-gradient(to right, var(--color1), var(--color2));
+}
+.banner .title {
+	font-size: 2.5rem;
+	color: #fff;
+}
+.banner .desc {
+	color: #fff;
+	font-size: 16px;
+}
+.banner .watch-link {
+	text-decoration: none;
+}
+.banner .play-btn {
+	width: 2rem;
+	margin: 0.5rem 0.5rem 0.5rem 0;
+	-webkit-animation: play 3s infinite;
+	        animation: play 3s infinite;
+	-webkit-animation-delay: 5s;
+	        animation-delay: 5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+@-webkit-keyframes play {
+	20% {
+		-webkit-transform: scale(1.0);
+		        transform: scale(1.0);
+	}
+	40% {
+		-webkit-transform: scale(1.2);
+		        transform: scale(1.2);
+	}
+	60% {
+		-webkit-transform: scale(1.2);
+		        transform: scale(1.2);
+	}
+	80% {
+		-webkit-transform: scale(1.0);
+		        transform: scale(1.0);
+	}
+	100% {
+		-webkit-transform: scale(1.0);
+		        transform: scale(1.0);
+	}
+}
+@keyframes play {
+	20% {
+		-webkit-transform: scale(1.0);
+		        transform: scale(1.0);
+	}
+	40% {
+		-webkit-transform: scale(1.2);
+		        transform: scale(1.2);
+	}
+	60% {
+		-webkit-transform: scale(1.2);
+		        transform: scale(1.2);
+	}
+	80% {
+		-webkit-transform: scale(1.0);
+		        transform: scale(1.0);
+	}
+	100% {
+		-webkit-transform: scale(1.0);
+		        transform: scale(1.0);
+	}
+}
+.banner-right .banner-rt-img {
+	width: 31rem;
+	padding-top: 2rem;
+}
+.banner .wave-img {
+	width: 100%;
+}
+
+/* --- Service Section --- */
+.service {
+	padding: 4.5rem 0;
+}
+.service .service-title {
+	font-size: 2.2rem;
+	margin-bottom: 6rem;
+}
+.service .service-img {
+	width: 5rem;
+	margin-bottom: 2rem;
+}
+.service .sub-title {
+	font-size: 1.5rem;
+	margin-bottom: 1.2rem;
+}
+
+/* --- Choose Us --- */
+.choose-us {
+	background: #F0F8FF;
+	padding: 4.5rem 0;
+}
+.choose-us .choose-title {
+	font-size: 2.2rem;
+	margin-bottom: 6rem;
+}
+.choose-us .left-title {
+	font-size: 1.5rem;
+	margin-bottom: 1.2rem;
+}
+.choose-us .choose-img {
+	width: 100%;
+	height: auto;
+}
+
+/* --- Testimonial --- */
+.testimonial {
+	padding: 4.5rem 0;
+}
+.testimonial .testimonial-title {
+	font-size: 2.2rem;
+	margin-bottom: 6rem;
+}
+.test-left .wrapper,
+.test-right .wrapper {
+	padding-left: 1rem;
+	border-left: 5px solid var(--color2);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.testimonial .wrapper {
+	width: 60%;
+}
+.testimonial .user-img {
+	max-width: 4rem;
+}
+.wrapper .img-wrapper {
+	width: 80px;
+	display: inline-block;
+}
+.wrapper .img-txt {
+	width: 200px;
+	display: inline-block;
+}
+.img-txt .user-title {
+	font-size: 20px;
+	font-weight: 800;
+	margin: 0;
+}
+.img-txt .user-designation {
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0;
+}
+
+/* --- Social -- */
+.social {
+	padding: 4.5rem 0;
+}
+.social .social-title {
+	font-size: 2.2rem;
+	margin-bottom: 6rem;
+}
+.social .social-icon {
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.social .link {
+	text-decoration: none;
+}
+.social .social-icon:hover {
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
+}
+.social .social-icon {
+	width: 3.5rem;
+}
+
+/* --- Footer --- */
+.footer {
+	background: -webkit-gradient(linear, left top, right top, from(var(--color1)), to(var(--color2)));
+	background: -o-linear-gradient(left, var(--color1), var(--color2));
+	background: linear-gradient(to right, var(--color1), var(--color2));
+}
+.wave-img2 {
+	width: 100%;
+}
+.ft-wrapper {
+	padding-top: 4rem;
+	padding-bottom: 0.7rem;
+}
+.middle .contact-icon {
+	background: -webkit-gradient(linear, left top, right top, from(var(--color1)), to(var(--color2)));
+	background: -o-linear-gradient(left, var(--color1), var(--color2));
+	background: linear-gradient(to right, var(--color1), var(--color2));
+	border-radius: 3px;
+	font-size: 1.2rem;
+	padding: 0.5rem;
+}
+.right #submit-btn {
+	background: -webkit-gradient(linear, left top, right top, from(var(--color1)), to(var(--color2)));
+	background: -o-linear-gradient(left, var(--color1), var(--color2));
+	background: linear-gradient(to right, var(--color1), var(--color2)); 
+	color: #fff;
+	border: 0;
+	outline: none;
+}
+.horizontal-line {
+	height: 0.05rem;
+	background: #BFBFBF;
+	margin-top: 1.2rem;
+}
+.bottom-txt {
+	color: #eee;
+	font-size: 0.9rem;
+}
+.my-link {
+	color: #eee;
+	font-size: 0.9rem;
+	text-decoration: none;
+}
+.my-link:hover {
+	text-decoration: underline;
+	color: #eee;
+}
